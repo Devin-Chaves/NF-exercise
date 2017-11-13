@@ -1,0 +1,17 @@
+.stats {
+    background: white;
+    width: 48%;
+    height: 600px;
+    max-height: 500px;
+    margin-top: 24px;
+    overflow: hidden;
+
+    &__heading {
+        color: white;
+        background: black;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 8px;
+    }
+}

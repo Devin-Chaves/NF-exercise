@@ -1,0 +1,96 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    -ms-flex-align: center;
+    background: #2d363b;
+}
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    -ms-flex-align: center;
+    padding: 0 32px;
+    &__logo {
+        height: 2rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    & > * {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+    &__menu {
+        &--left {
+            .nav__item {
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    height: 25px;
+                    width: 1px;
+                    background: #5f6b73;
+                    margin-left: 32px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        &--right {
+            .nav__item {
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    height: 25px;
+                    width: 1px;
+                    background: #5f6b73;
+                    margin-right: 32px;
+                    vertical-align: middle;
+                }
+            }
+            & > * {
+                justify-content: flex-end;
+                -ms-flex-pack: end;
+            }
+        }
+    }
+    &__list {
+        color: white;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+        -ms-flex-align: center;
+
+        white-space: nowrap;
+
+        margin-top: -32px;
+        margin-left: -32px;
+        margin-bottom: 0;
+
+        & > * {
+            margin-top: 32px;
+            margin-left: 32px;
+        }
+    }
+}
+
+.funds {
+    display: inline-block;
+    &__balance {
+    }
+    &__heading {
+        font-size: 10px;
+    }
+    &__button {
+    }
+}

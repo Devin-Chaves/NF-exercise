@@ -1,0 +1,19 @@
+//misc settings
+@import 'config/settings';
+@import 'config/mixins';
+
+//global things
+@import 'general/normalize';
+@import 'general/utilities';
+@import 'layout/main';
+
+// layout
+@import 'layout/nav';
+
+// components
+@import 'components/button';
+@import 'components/scoreboard';
+@import 'components/play';
+@import 'components/stats';
+@import 'components/scoring';
+@import 'components/footer';
